@@ -1,0 +1,75 @@
+#mobytic_homepage_cards {
+    margin-top: 60px;
+
+    .row {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        .mobytic_card {
+            margin: 15px 0;
+
+            @media screen and (max-width: 768px) {
+                width: 50%;
+            }
+
+            >div {
+                height: 100%;
+                border-radius: 20px;
+                background: white;
+                padding: 5px;
+                box-shadow: 0px 0px 6px 0px black;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                .header {
+                    border-radius: 18px;
+                    height: 70px;
+                    background-color: gray;
+                }
+
+                .title {
+                    border-radius: 50px;
+                    margin: 5px;
+                    background-color: #EB1212;
+                    color: white;
+                    text-align: center;
+                }
+
+                .content {
+                    display: flex;
+                    --gap: 5px;
+                    gap: --gap;
+                    justify-content: center;
+
+                    >div {
+                        width: 100%;
+
+                        >ul {
+                            margin: 10px 0;
+                            padding: 0 5px;
+
+                            li {
+                                list-style: none;
+
+                                a {
+                                    color: #371313;
+                                    font-size: 12px;
+                                }
+
+                                &:before {
+                                    content: ">";
+                                    margin-right: 5px;
+                                    font-size: 12px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
